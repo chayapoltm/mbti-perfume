@@ -264,7 +264,7 @@ export default function App() {
               marginBottom: "2rem",
               color: "WHITE"
             }}>
-              <h1 style={{ fontSize: "32px", margin: "0 0 8px 0", fontWeight: "bold" }}>
+              <h1 style={{ fontSize: "32px", margin: "0 0 8px 0", fontWeight: "bold", color: "white" }}>
                 🧠 MBTI Scent Quiz
               </h1>
               <p style={{ fontSize: "14px", opacity: 0.9, margin: 0 }}>
