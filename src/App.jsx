@@ -107,49 +107,49 @@ export default function App() {
   const perfumes = {
     ISTJ: { 
       name: "Amber Woods", 
-      emoji: "🥃",
+      emoji: "📋",
       scent: "กลิ่นไม้สีแนว เข้มข้น อบอุ่น",
       desc: "บุคลิกประเภท Logistician - มีความรับผิดชอบสูง จริงใจ และเป็นระเบียบ สมบูรณ์ แข็งแกร่ง ตรงต่อเวลา",
       color: "#D4A574"
     },
     ISFJ: { 
       name: "Gentle Peony", 
-      emoji: "🌸",
+      emoji: "🛡️",
       scent: "กลิ่นดอกไม้นุ่มนวล อบอุ่น",
       desc: "บุคลิกประเภท Defender - ใจดี หมั่นเพียร ค่อนข้างเงียบ แต่รักษาสัมพันธ์ที่สำคัญด้วยใจแน่วแน่",
       color: "#E8B4D4"
     },
     INFJ: { 
       name: "Mystic Iris", 
-      emoji: "🌺",
+      emoji: "🧿",
       scent: "กลิ่นลึกลับ สะท้อนใจ",
       desc: "บุคลิกประเภท Advocate - มีความเห็นแบบลึกซึ้ง มีอุดมการณ์สูง คิดเฉพาะตัว ลึกลับ แต่กัลยามิตรและห่วงใจคน",
       color: "#9B7BA0"
     },
     INTJ: { 
       name: "Dark Oud", 
-      emoji: "🌙",
+      emoji: "⚙️",
       scent: "กลิ่นอูด เข้มข้น เมืองหลวง",
       desc: "บุคลิกประเภท Architect - ไฟฟ้า มีวิสัยทัศน์ ปฏิเสธความเห็นที่ไม่มีฐานการวิจารณ์ และพยายามแข่งเพื่อความเป็นเลิศ",
       color: "#2C2C2C"
     },
     ISTP: { 
       name: "Fresh Citrus", 
-      emoji: "🍊",
+      emoji: "🔧",
       scent: "กลิ่นส้มสดชื่น กีฬา",
       desc: "บุคลิกประเภท Virtuoso - นิยมตัวเอง ชอบความอิสระ ตรรกะ เงียบ แต่มีความสามารถในการแก้ปัญหา",
       color: "#FF9500"
     },
     ISFP: { 
       name: "Soft Floral", 
-      emoji: "🌼",
+      emoji: "🎨",
       scent: "กลิ่นดอกไม้อ่อนไหว นิ่มนวล",
       desc: "บุคลิกประเภท Adventurer - อ่อนไหว ศิลปี มีความรักษา แต่ไม่ชอบความขัดแย้ง ทำตามหัวใจ",
       color: "#F4D03F"
     },
     INFP: { 
       name: "Sweet Lavender", 
-      emoji: "💜",
+      emoji: "🦋",
       scent: "กลิ่นลาเวนเดอร์หวาน ฝันเห็น",
       desc: "บุคลิกประเภท Mediator - เป็นอุดมคติ ฝันเห็น ทำตามค่านิยม ศิลปี ไม่สนใจเงิน เต็มไปด้วยความรักและความหวัง",
       color: "#B19CD9"
@@ -163,42 +163,42 @@ export default function App() {
     },
     ESTP: { 
       name: "Spicy Amber", 
-      emoji: "🔥",
+      emoji: "🚀",
       scent: "กลิ่นเผ็ดร้อน แอมเบอร์",
       desc: "บุคลิกประเภท Entrepreneur - สำรวจ เสี่ยง ชอบสิ่งใหม่ สูตร ต่อสู้ ดูแลตนเองดี",
       color: "#E74C3C"
     },
     ESFP: { 
       name: "Fruity Fresh", 
-      emoji: "🎉",
+      emoji: "🎭",
       scent: "กลิ่นผลไม้สดชื่น เต็มเปี่ยม",
       desc: "บุคลิกประเภท Entertainer - จิตแจ่มใจสดชื่น มนต์เสน่ห์ ชอบการทำให้คนอื่นยิ้ม ชอบความสนุกสนาน",
       color: "#F39C12"
     },
     ENFP: { 
       name: "Sweet Citrus", 
-      emoji: "🌈",
+      emoji: "✨",
       scent: "กลิ่นส้มหวาน สดชื่น ร่าเรื่อง",
       desc: "บุคลิกประเภท Campaigner - ห่วงใจ สนใจหลายสิ่ง ตรงไปตรงมา พลวัต กระตุ้นกิจกรรม",
       color: "#3498DB"
     },
     ENTP: { 
       name: "Bold Wood", 
-      emoji: "⚡",
+      emoji: "💡",
       scent: "กลิ่นไม้เข้มข้น กล้าหาญ",
       desc: "บุคลิกประเภท Debater - เฉลียวฉล้าด ชอบความท้าทาย ไม่สนใจอำนาจ ชอบการถกเถียง",
       color: "#2ECC71"
     },
     ESTJ: { 
       name: "Classic Cologne", 
-      emoji: "💼",
+      emoji: "👔",
       scent: "กลิ่นคลาสสิก ผู้นำ เป็นระเบียบ",
       desc: "บุคลิกประเภท Logistician - ผู้นำที่ยุติธรรมเมตตา เข้มงวด มีลักษณะผู้บัญชาการ วาจาตรงไปตรงมา",
       color: "#34495E"
     },
     ESFJ: { 
       name: "Floral Bloom", 
-      emoji: "🌷",
+      emoji: "🤝",
       scent: "กลิ่นดอกไม้บาน อบอุ่น สังคม",
       desc: "บุคลิกประเภท Consul - สนใจใจเพื่อน อบอุ่น เสริมสร้าง ปรัชญาดำเนินการสำเร็จ",
       color: "#E91E63"
@@ -251,7 +251,7 @@ export default function App() {
   return (
     <div style={{
       minHeight: "100vh",
-      background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      background: "linear-gradient(135deg, #1F304D 0%, #000000 100%)",
       padding: "2rem 0",
       fontFamily: "Arial, sans-serif"
     }}>
@@ -262,10 +262,10 @@ export default function App() {
             <div style={{
               textAlign: "center",
               marginBottom: "2rem",
-              color: "white"
+              color: "#DAE3EB"
             }}>
               <h1 style={{ fontSize: "32px", margin: "0 0 8px 0", fontWeight: "bold" }}>
-                🌸 MBTI Perfume Test
+                🧠 MBTI Scent Quiz
               </h1>
               <p style={{ fontSize: "14px", opacity: 0.9, margin: 0 }}>
                 ค้นหา Scent ที่เหมาะกับบุคลิกของคุณ
@@ -275,7 +275,7 @@ export default function App() {
             {/* Progress Bar */}
             <div style={{ marginBottom: "2rem" }}>
               <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "12px" }}>
-                <span style={{ fontSize: "13px", color: "white", fontWeight: 500 }}>
+                <span style={{ fontSize: "13px", color: "#DAE3EB", fontWeight: 500 }}>
                   ข้อที่ {currentQ + 1} / {questions.length}
                 </span>
               </div>
@@ -287,7 +287,7 @@ export default function App() {
               }}>
                 <div style={{
                   height: "100%",
-                  background: "white",
+                  background: "#DAE3EB",
                   width: `${((currentQ + 1) / questions.length) * 100}%`,
                   transition: "width 0.3s ease",
                   borderRadius: "10px"
@@ -297,7 +297,7 @@ export default function App() {
 
             {/* Question Card */}
             <div style={{
-              background: "white",
+              background: "#DAE3EB",
               borderRadius: "16px",
               padding: "2rem",
               marginBottom: "1.5rem",
@@ -318,13 +318,13 @@ export default function App() {
                   onClick={() => handleAnswer(questions[currentQ].type)}
                   style={{
                     padding: "14px 16px",
-                    background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                    background: "linear-gradient(135deg, #1F304D 0%, #1F304D 100%)",
                     border: "none",
                     borderRadius: "10px",
                     fontSize: "14px",
                     cursor: "pointer",
                     textAlign: "left",
-                    color: "white",
+                    color: "#DAE3EB",
                     fontWeight: 500,
                     transition: "transform 0.2s, box-shadow 0.2s",
                     boxShadow: "0 4px 12px rgba(102, 126, 234, 0.4)"
@@ -344,13 +344,13 @@ export default function App() {
                   onClick={() => handleAnswer(questions[currentQ].type.reverse())}
                   style={{
                     padding: "14px 16px",
-                    background: "white",
-                    border: "2px solid #667eea",
+                    background: "#DAE3EB",
+                    border: "2px solid #1F304D",
                     borderRadius: "10px",
                     fontSize: "14px",
                     cursor: "pointer",
                     textAlign: "left",
-                    color: "#667eea",
+                    color: "#1F304D",
                     fontWeight: 500,
                     transition: "transform 0.2s, background 0.2s"
                   }}
@@ -360,7 +360,7 @@ export default function App() {
                   }}
                   onMouseLeave={(e) => {
                     e.target.style.transform = "translateY(0)";
-                    e.target.style.background = "white";
+                    e.target.style.background = "#DAE3EB";
                   }}
                 >
                   ✓ {questions[currentQ].b}
@@ -375,7 +375,7 @@ export default function App() {
           }}>
             {/* MBTI Result */}
             <div style={{
-              background: "white",
+              background: "#DAE3EB",
               borderRadius: "20px",
               padding: "2rem",
               marginBottom: "1.5rem",
@@ -446,13 +446,13 @@ export default function App() {
               onClick={resetTest}
               style={{
                 padding: "14px 32px",
-                background: "white",
+                background: "#DAE3EB",
                 border: "none",
                 borderRadius: "10px",
                 fontSize: "15px",
                 fontWeight: 600,
                 cursor: "pointer",
-                color: "#667eea",
+                color: "#1F304D",
                 boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
                 transition: "transform 0.2s"
               }}
