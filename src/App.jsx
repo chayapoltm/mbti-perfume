@@ -262,7 +262,7 @@ export default function App() {
             <div style={{
               textAlign: "center",
               marginBottom: "2rem",
-              color: "#DAE3EB"
+              color: "WHITE"
             }}>
               <h1 style={{ fontSize: "32px", margin: "0 0 8px 0", fontWeight: "bold" }}>
                 🧠 MBTI Scent Quiz
