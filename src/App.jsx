@@ -1,5 +1,24 @@
 import React, { useState } from 'react';
 
+const MBTIIcons = {
+  ISTJ: <img src="/icons/ISTJ.png" alt="ISTJ" style={{ width: "80px", height: "80px" }} />,
+  ISFJ: <img src="/icons/ISFJ.png" alt="ISFJ" style={{ width: "80px", height: "80px" }} />,
+  INFJ: <img src="/icons/INFJ.png" alt="INFJ" style={{ width: "80px", height: "80px" }} />,
+  INTJ: <img src="/icons/INTJ.png" alt="INTJ" style={{ width: "80px", height: "80px" }} />,
+  ISTP: <img src="/icons/ISTP.png" alt="ISTP" style={{ width: "80px", height: "80px" }} />,
+  ISFP: <img src="/icons/ISFP.png" alt="ISFP" style={{ width: "80px", height: "80px" }} />,
+  INFP: <img src="/icons/INFP.png" alt="INFP" style={{ width: "80px", height: "80px" }} />,
+  INTP: <img src="/icons/INTP.png" alt="INTP" style={{ width: "80px", height: "80px" }} />,
+  ESTP: <img src="/icons/ESTP.png" alt="ESTP" style={{ width: "80px", height: "80px" }} />,
+  ESFP: <img src="/icons/ESFP.png" alt="ESFP" style={{ width: "80px", height: "80px" }} />,
+  ENFP: <img src="/icons/ENFP.png" alt="ENFP" style={{ width: "80px", height: "80px" }} />,
+  ENTP: <img src="/icons/ENTP.png" alt="ENTP" style={{ width: "80px", height: "80px" }} />,
+  ESTJ: <img src="/icons/ESTJ.png" alt="ESTJ" style={{ width: "80px", height: "80px" }} />,
+  ESFJ: <img src="/icons/ESFJ.png" alt="ESFJ" style={{ width: "80px", height: "80px" }} />,
+  ENFJ: <img src="/icons/ENFJ.png" alt="ENFJ" style={{ width: "80px", height: "80px" }} />,
+  ENTJ: <img src="/icons/ENTJ.png" alt="ENTJ" style={{ width: "80px", height: "80px" }} />
+};
+
 export default function App() {
   const [currentQ, setCurrentQ] = useState(0);
   const [scores, setScores] = useState({ E: 0, I: 0, N: 0, S: 0, F: 0, T: 0, J: 0, P: 0 });
