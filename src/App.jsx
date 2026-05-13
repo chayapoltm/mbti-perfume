@@ -16,7 +16,7 @@ const MBTIIcons = {
   ESTJ: <img src="/icons/ESTJ.png" alt="ESTJ" style={{ width: "80px", height: "80px" }} />,
   ESFJ: <img src="/icons/ESFJ.png" alt="ESFJ" style={{ width: "80px", height: "80px" }} />,
   ENFJ: <img src="/icons/ENFJ.png" alt="ENFJ" style={{ width: "80px", height: "80px" }} />,
-  ENTJ: <img src="/icons/ENTJ.png" alt="ENTJ" style={{ width: "80px", height: "80px" }} />
+  ENTJ: <img src="/icons/ENTJ.png" alt="ENTJ" style={{ width: "80px", height: "80px" }} />,
 };
 
 export default function App() {
