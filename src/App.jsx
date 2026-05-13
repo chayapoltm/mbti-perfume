@@ -389,7 +389,16 @@ export default function App() {
                   fontSize: "60px",
                   marginBottom: "12px"
                 }}>
-                  {result.emoji}
+                      {/* เพิ่มรูปไอคอนตรงนี้ */}
+    <div style={{
+      width: "100px",
+      height: "100px",
+      margin: "0 auto 12px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center"
+    }}>
+      {MBTIIcons[mbti]}
                 </div>
                 <h1 style={{
                   fontSize: "36px",
