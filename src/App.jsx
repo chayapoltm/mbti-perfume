@@ -197,7 +197,7 @@ export default function App() {
       color: "#2ECC71"
     },
     ESTJ: { 
-      name: "Executive", 
+      name: "B-FF1962 Executive", 
       scent: "blends crisp citrus, sharp lavender, and oakmoss—a commanding, structured, and timeless fragrance built for the decisive leader.",
       desc: "บุคลิกประเภท ผู้บริหาร/ผู้จัดการ - นักบริหารที่ยึดถือระเบียบปฏิบัติและผลสัมพฤติที่ชัดเจนเป็นที่ตั้ง มีความสามารถในการจัดสรรทรัพยากรและบุคคลอย่างมีประสิทธิภาพ เพื่อบรรลุเป้าหมายในกรอบเวลาที่กำหนด",
       color: "#34495E"
