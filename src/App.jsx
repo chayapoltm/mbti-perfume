@@ -184,7 +184,7 @@ const questions = [
       name: "Entrepreneur", 
       emoji: "🌪️",
       scent: "A high-voltage pulse for the night. High-energy bergamot and mint ignite a provocative heart of spices and heliotrope, settling into an addictive, sweet glow of vanilla and amber under city lights.",
-      desc: "<strong>บุคลิกประเภท - Entrepreneur</strong><br/>นักบริหารความเสี่ยงผู้เชี่ยวชาญในการคว้าโอกาสและตอบโต้ต่อสถานการณ์ที่รวดเร็ว มีทักษะในการเจรจาที่เป็นเลิศและมุ่งมั่นที่จะนำพาธุรกิจไปสู่ความสำเร็จผ่านการลงมือทำจริง",
+      desc: "<strong>บุคลิกประเภท - ผู้ประกอบการ</strong><br/>นักบริหารความเสี่ยงผู้เชี่ยวชาญในการคว้าโอกาสและตอบโต้ต่อสถานการณ์ที่รวดเร็ว มีทักษะในการเจรจาที่เป็นเลิศและมุ่งมั่นที่จะนำพาธุรกิจไปสู่ความสำเร็จผ่านการลงมือทำจริง",
       color: "#E74C3C"
     },
     ESFP: { 
