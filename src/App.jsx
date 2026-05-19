@@ -171,7 +171,7 @@ export default function App() {
     ESFP: { 
       name: "Entertainer", 
       emoji: "🥂",
-      scent: "กลิ่นผลไม้สดชื่น เต็มเปี่ยม",
+      scent: "An infectious, spotlight-stealing burst of joy. Playful strawberry and lemon ignite an energetic welcome, unfolding into a theatrical heart of marshmallow and pastry cream over sweet vanilla and sugar.",
       desc: "บุคลิกประเภท ผู้มอบความบันเทิง - ผู้สร้างปฏิสัมพันธ์ที่มีเสน่ห์และพลังขับเคลื่อนในการสร้างบรรยากาศเชิงบวก มีความเชี่ยวชาญในการเข้าถึงผู้คนและเปลี่ยนประสบการณ์ธรรมดาให้เป็นจดหมายเหตุที่น่าจดจำ",
       color: "#F39C12"
     },
