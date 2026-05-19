@@ -7,214 +7,214 @@ export default function App() {
 
   const questions = [
     {
-      q: "ในการพบปะคนใหม่ คุณมักจะ...",
-      a: "เดินเข้าไปเริ่มบทสนทนาอย่างสดชื่น",
-      b: "รอฟังให้คนอื่นเริ่มบทสนทนา",
+      q: "คุณชอบอย่างไรในการใช้เวลา",
+      a: "ออกไปโต้ตอบคนอื่น หรือกิจกรรมสังคม",
+      b: "นั่งอยู่เดี่ยว อ่านหนังสือ หรือคิดเรื่องต่างๆ",
       type: ["E", "I"]
     },
     {
-      q: "คุณชอบที่จะ...",
-      a: "มุ่งเน้นไปที่ข้อเท็จจริง และรายละเอียดจริง",
-      b: "ถาม 'แล้วจะเป็นไปอย่างไร' และคิดถึงความเป็นไปได้",
+      q: "เมื่อเรียนรู้เรื่องใหม่ คุณชอบ",
+      a: "ทำความเข้าใจตัวอักษร รายละเอียด และข้อเท็จจริง",
+      b: "เข้าใจภาพรวม ความหมาย และความเป็นไปได้",
       type: ["S", "N"]
     },
     {
-      q: "เมื่อตัดสินใจสำคัญ คุณมักจะ...",
-      a: "วิเคราะห์ข้อมูล และตรรกะ",
-      b: "พิจารณาว่ามันจะส่งผลต่อความรู้สึกของคนอื่น",
+      q: "เมื่อตัดสินใจ คุณมักจะ",
+      a: "ใช้ตรรกะและข้อเท็จจริง",
+      b: "พิจารณาความรู้สึกและผลกระทบต่อผู้คน",
       type: ["T", "F"]
     },
     {
-      q: "สำหรับการทำงานและชีวิต คุณชอบ...",
-      a: "มีแผนและกำหนดเวลาที่ชัดเจน",
-      b: "มีความยืดหยุ่นและเปิดต่อโอกาสใหม่",
+      q: "สำหรับการทำงานและชีวิต คุณชอบ",
+      a: "มีแผนชัดเจน จัดระเบียบ และตรงต่อเวลา",
+      b: "ยืดหยุ่น ไม่ตายตัว และเปิดรับความเป็นไปได้",
       type: ["J", "P"]
     },
     {
-      q: "ในการชุมนุม คุณมักจะ...",
-      a: "ได้พลังมาจากการโต้ตอบกับคนอื่น",
-      b: "ต้องการเวลาเพื่อตัวเองหลังจากหลายวัน",
+      q: "ในการทำงานกลุ่ม คุณ",
+      a: "ชอบทำงานเป็นทีม พูดคุยแลกเปลี่ยนอยู่เสมอ",
+      b: "ชอบทำงานคนเดียว หรือในกลุ่มเล็กๆ",
       type: ["E", "I"]
     },
     {
-      q: "คุณมักจะสนใจ...",
-      a: "สิ่งที่สามารถสัมผัส เห็น และวัดได้",
+      q: "คุณมักจะสนใจ",
+      a: "สิ่งที่เห็นได้ วัดได้ สัมผัสได้ในปัจจุบัน",
       b: "ธีมที่ลึกซึ้ง ความหมาย และแนวโน้มอนาคต",
       type: ["S", "N"]
     },
     {
-      q: "เมื่อมีข้อขัดแย้ง คุณจะ...",
-      a: "มองหาวิธีแก้ปัญหาที่ยุติธรรม และสมควร",
-      b: "พยายามทำให้ทุกคนรู้สึกได้ยิน และเข้าใจ",
+      q: "เมื่อมีข้อขัดแย้ง คุณจะ",
+      a: "ค้นหาวิธีแก้ไขที่ยุติธรรมและเป็นกลาง",
+      b: "พยายามเข้าใจความรู้สึกของทุกคน",
       type: ["T", "F"]
     },
     {
-      q: "คุณมักจะเลือก...",
+      q: "เมื่อเริ่มโปรเจคใหม่ คุณ",
       a: "ลงมือทำ และเรียนรู้จากประสบการณ์",
-      b: "วางแผนครั้งแรก แล้วจึงเริ่มทำ",
-      type: ["P", "J"]
+      b: "เริ่มทำได้เลย เรียนรู้ขณะดำเนิน",
+      type: ["J", "P"]
     },
     {
-      q: "คุณรู้สึกมีพลังเมื่อ...",
-      a: "มีกิจกรรมมากมาย และเป็นส่วนหนึ่งของกลุ่ม",
-      b: "มีเวลาเพื่อตัวเอง และคิดทำความเข้าใจสิ่งต่าง ๆ",
+      q: "อะไรทำให้คุณมีพลังมากขึ้น",
+      a: "การอยู่กับคนอื่น และกิจกรรมกลุ่มร่วมกัน",
+      b: "เวลาคนเดียว การไตร่ตรอง และความเงียบสงบ",
       type: ["E", "I"]
     },
     {
-      q: "ในการเรียนรู้สิ่งใหม่ คุณชอบ...",
-      a: "ลงมือปฏิบัติจริง และเข้าใจว่ามันทำงานอย่างไร",
-      b: "เข้าใจทฤษฎี ลักษณะเฉพาะ และการใช้งาน",
+      q: "คุณจำเรื่องได้ดีที่สุด",
+      a: "ข้อมูลเฉพาะ วันที่ ตัวเลข สิ่งที่เกิดจริง",
+      b: "ความหมาย บริบท และความเชื่อมโยง",
       type: ["S", "N"]
     },
     {
-      q: "ตัวเลือกไหนรู้สึกว่าเป็นคุณมากกว่า...",
-      a: "ลงมือทำให้งานเสร็จโดยใช้วิธีตามวัตถุประสงค์",
-      b: "พิจารณาความรู้สึก และธรรมชาติของทุกคน",
+      q: "เมื่อให้คำแนะนำ คุณ",
+      a: "บอกความจริง โดยไม่หวงแหน",
+      b: "ค่อยเป็นค่อยไป พิจารณาความรู้สึก",
       type: ["T", "F"]
     },
     {
-      q: "ในความสัมพันธ์ในการทำงาน คุณ...",
+      q: "คุณนิยมวิธีการทำงาน",
       a: "ชอบความชัดเจน กำหนดเวลา และความเป็นระเบียบ",
       b: "ชอบความยืดหยุ่น และปรับเปลี่ยนตามสถานการณ์",
       type: ["J", "P"]
     },
     {
-      q: "งานปาร์ตี้ คือ สถานที่ที่คุณ...",
-      a: "ออกมาเล่าเรื่องราว แลกเปลี่ยน และสนุกสนาน",
-      b: "นั่งคอยให้เวลาผ่านไป หรือเดินหนีออกไปข้างนอก",
+      q: "งานปาร์ตี้ คือที่ที่คุณ",
+      a: "เล่าเรื่องราว แลกเปลี่ยน และสนุกสนาน",
+      b: "นั่งเงียบ ฟังคนอื่น หรือออกไปเร็ว",
       type: ["E", "I"]
     },
     {
-      q: "คุณจำได้ดีที่สุด ในเรื่อง...",
-      a: "ข้อมูลเฉพาะ และรายละเอียดที่เกี่ยวข้อง",
-      b: "รูปแบบ การเชื่อมต่อ และความหมายโดยรวม",
+      q: "อนาคตที่น่าสนใจสำหรับคุณ คือ",
+      a: "ทำให้แน่นอน ปลอดภัย และเป็นจริง",
+      b: "เต็มไปด้วยความเป็นไปได้ ใหม่ และเปลี่ยนแปลง",
       type: ["S", "N"]
     },
     {
-      q: "เมื่อให้คำวิจารณ์ คุณจะ...",
-      a: "ตรงไปตรงมา และให้ข้อเท็จจริง",
-      b: "ค่อยเป็นค่อยไป และคำนึงถึงผลต่อจิตใจ",
+      q: "คุณเชื่อว่า",
+      a: "หลักการและตรรกะสำคัญกว่ากำลังใจ",
+      b: "ความรู้สึกและหลักการเท่าเทียมกัน",
       type: ["T", "F"]
     },
     {
-      q: "คุณมักจะ...",
-      a: "วางแผน และรีบดำเนินการให้เสร็จ",
-      b: "เปิดตัวเลือกไว้ และตรวจสอบความเป็นไปได้",
+      q: "งานที่ดีที่สุดสำหรับคุณคือ",
+      a: "มีเป้าหมายชัดเจน กำหนดเวลา ประเมินความสำเร็จได้",
+      b: "เสรีภาพ ท้าทาย เรียนรู้อย่างต่อเนื่อง",
       type: ["J", "P"]
     }
   ];
 
   const perfumes = {
     ISTJ: { 
-      name: "Amber Woods", 
-      emoji: "📋",
-      scent: "กลิ่นไม้สีแนว เข้มข้น อบอุ่น",
-      desc: "บุคลิกประเภท Logistician - มีความรับผิดชอบสูง จริงใจ และเป็นระเบียบ สมบูรณ์ แข็งแกร่ง ตรงต่อเวลา",
+      name: "Logistician", 
+      emoji: "🏛️",
+      scent: "An explosion of joyful energy. Mouth-watering peach, lemon, and marigold create an uplifting aura, while a vibrant heart of jasmine and cinnamon dances over a rich base of precious woods.",
+      desc: "บุคลิกประเภท นักคำนวณ - นิยามของความเที่ยงตรงและความรับผิดชอบที่มั่นคงดั่งรากฐานขององค์กร ให้ความสำคัญกับข้อเท็จจริง ประสบการณ์ และการรักษามาตรฐานที่ได้รับการพิสูจน์แล้วว่าดีที่สุด",
       color: "#D4A574"
     },
     ISFJ: { 
-      name: "Gentle Peony", 
+      name: "Defender", 
       emoji: "🛡️",
-      scent: "กลิ่นดอกไม้นุ่มนวล อบอุ่น",
-      desc: "บุคลิกประเภท Defender - ใจดี หมั่นเพียร ค่อนข้างเงียบ แต่รักษาสัมพันธ์ที่สำคัญด้วยใจแน่วแน่",
+      scent: "A devoted, heartwarming embrace of pure comfort. Bright citrus and rose bloom into a nurturing heart of gentle jasmine, iris, and cedarwood, settling over a cozy, protective base of sweet chocolate and vanilla.",
+      desc: "บุคลิกประเภท ผู้ปกป้อง - ผู้ดูแลความเรียบร้อยที่มีความละเอียดรอบคอบและใส่ใจในทุกรายละเอียดของความสัมพันธ์ มุ่งเน้นการสนับสนุนเบื้องหลังอย่างเป็นระบบเพื่อสร้างความมั่นคงและสงบสุขให้แก่ส่วนรวม",
       color: "#E8B4D4"
     },
     INFJ: { 
-      name: "Mystic Iris", 
-      emoji: "🧿",
-      scent: "กลิ่นลึกลับ สะท้อนใจ",
-      desc: "บุคลิกประเภท Advocate - มีความเห็นแบบลึกซึ้ง มีอุดมการณ์สูง คิดเฉพาะตัว ลึกลับ แต่กัลยามิตรและห่วงใจคน",
+      name: "Advocate", 
+      emoji: "👁️‍🗨️",
+      scent: "A serene meditation in a misty garden. Bright bergamot clears the mind, leading to an ethereal heart of green tea, orange flower, and a whisper of chocolate, all grounded by cedarwood for profound peace.",
+      desc: "บุคลิกประเภท นักสนับสนุน - ผู้นำทางจิตวิญญาณที่ใช้ความเข้าใจในมนุษย์อย่างลึกซึ้งในการขับเคลื่อนความเปลี่ยนแปลงเชิงบวก มุ่งหาแก่นแท้ของความสัมพันธ์และดำรงตัวตนอย่างมีระดับท่ามกลางความซับซ้อนของโลก",
       color: "#9B7BA0"
     },
     INTJ: { 
-      name: "Dark Oud", 
-      emoji: "⚙️",
-      scent: "กลิ่นอูด เข้มข้น เมืองหลวง",
-      desc: "บุคลิกประเภท Architect - ไฟฟ้า มีวิสัยทัศน์ ปฏิเสธความเห็นที่ไม่มีฐานการวิจารณ์ และพยายามแข่งเพื่อความเป็นเลิศ",
+      name: "Architect", 
+      emoji: "♟️",
+      scent: "A masterclass in deliberate design. Calculated spices and rose establish a commanding presence, unlocking an unyielding heart of rare agarwood. A minimalist foundation of amber and tonka ensures enduring focus.",
+      desc: "บุคลิกประเภท ผู้มีเหตุผล - นักยุทธศาสตร์ผู้ขับเคลื่อนโลกด้วยวิสัยทัศน์ระยะยาวและโครงสร้างเหตุผลที่สมบูรณ์แบบ รักความสันโดษเพื่อใช้เวลาขัดเกลาแผนงานให้ไร้ที่ติ และเชื่อมั่นในมาตรฐานความสำเร็จที่สูงกว่าค่าเฉลี่ย",
       color: "#2C2C2C"
     },
     ISTP: { 
-      name: "Fresh Citrus", 
-      emoji: "🔧",
-      scent: "กลิ่นส้มสดชื่น กีฬา",
-      desc: "บุคลิกประเภท Virtuoso - นิยมตัวเอง ชอบความอิสระ ตรรกะ เงียบ แต่มีความสามารถในการแก้ปัญหา",
+      name: "Virtuoso", 
+      emoji: "⚙️",
+      scent: "A calculated mastery of raw mechanics. Sharp bergamot and saffron spark tactical focus, unfolding into a rugged heart of leather and amber over an independent, pragmatic foundation of patchouli, oakmoss, and oudh.",
+      desc: "บุคลิกประเภท ผู้มีความสามารถโดดเด่น - นักแก้ปัญหาเชิงเทคนิคที่เน้นความเรียบง่ายและประสิทธิภาพสูงสุดในสถานการณ์จริง ใช้ความสงบและการวิเคราะห์ที่เฉียบไวในการจัดการอุปสรรคตรงหน้าอย่างเป็นมืออาชีพ",
       color: "#FF9500"
     },
     ISFP: { 
-      name: "Soft Floral", 
+      name: "Adventurer", 
       emoji: "🎨",
-      scent: "กลิ่นดอกไม้อ่อนไหว นิ่มนวล",
-      desc: "บุคลิกประเภท Adventurer - อ่อนไหว ศิลปี มีความรักษา แต่ไม่ชอบความขัดแย้ง ทำตามหัวใจ",
+      scent: "A deeply personal, poetic retreat into unfiltered expression. Creamy milk and ambrette spark a tranquil, imaginative haven, unfolding into a soft, artistic heart of muguet, violet, and jasmine over a cozy foundation of comforting vanilla.",
+      desc: "บุคลิกประเภท นักผจญภัย - ศิลปินผู้สื่อสารผ่านการกระทำและสุนทรียภาพในทุกจังหวะชีวิต มีความละเอียดอ่อนต่อประสบการณ์ปัจจุบันและสร้างสรรค์ผลงานที่สะท้อนถึงรสนิยมที่เป็นเอกลักษณ์เฉพาะตัว",
       color: "#F4D03F"
     },
     INFP: { 
-      name: "Sweet Lavender", 
+      name: "Mediator", 
       emoji: "🦋",
-      scent: "กลิ่นลาเวนเดอร์หวาน ฝันเห็น",
-      desc: "บุคลิกประเภท Mediator - เป็นอุดมคติ ฝันเห็น ทำตามค่านิยม ศิลปี ไม่สนใจเงิน เต็มไปด้วยความรักและความหวัง",
+      scent: "A soft-focus romance like a warm embrace. Gentle geranium drifts into a nostalgic, powdery heart of rose, anchored by amber and cedarwood to create a comforting, lyrical sanctuary.",
+      desc: "บุคลิกประเภท ผู้ไกล่เกลี่ย - จิตวิญญาณเสรีผู้ยึดถือความสัตย์จริงต่อความเชื่อมั่นภายในเป็นเข็มทิศในการดำเนินชีวิต ให้คุณค่ากับความหมายที่ซ่อนอยู่และมุ่งสร้างสรรค์งานที่สะท้อนตัวตนอย่างประณีตและจริงใจ",
       color: "#B19CD9"
     },
     INTP: { 
-      name: "Minimalist Musk", 
+      name: "Logician", 
       emoji: "🧪",
-      scent: "กลิ่นมัสก์ เรียบง่าย ลึก",
-      desc: "บุคลิกประเภท Logician - วิเคราะห์สิ่งต่างๆ บ่อยครั้งที่อยู่ในคิด ชอบการสืบสอนและแก้ปัญหาที่ซับซ้อน",
+      scent: "An intellectual blueprint of pure clarity. Crisp bergamot sparks analytical insight, yielding to a precise heart of fluid jasmine and plush musk. Vanilla and earthy oakmoss establish a grounded, logical conclusion.",
+      desc: "บุคลิกประเภท นักตรรกะ - นักคิดเชิงนามธรรมผู้หลงใหลในการรื้อถอนและสร้างทฤษฎีใหม่ภายใต้ความเงียบเชียบ มีระบบตรรกะที่เป็นอิสระจากกรอบเดิมๆ มุ่งเน้นความถูกต้องของข้อมูลมากกว่าความพึงพอใจของสังคม",
       color: "#95A5A6"
     },
     ESTP: { 
-      name: "Spicy Amber", 
-      emoji: "🚀",
-      scent: "กลิ่นเผ็ดร้อน แอมเบอร์",
-      desc: "บุคลิกประเภท Entrepreneur - สำรวจ เสี่ยง ชอบสิ่งใหม่ สูตร ต่อสู้ ดูแลตนเองดี",
+      name: "Entrepreneur", 
+      emoji: "🌪️",
+      scent: "A high-voltage pulse for the night. High-energy bergamot and mint ignite a provocative heart of spices and heliotrope, settling into an addictive, sweet glow of vanilla and amber under city lights.",
+      desc: "บุคลิกประเภท Entrepreneur - นักบริหารความเสี่ยงผู้เชี่ยวชาญในการคว้าโอกาสและตอบโต้ต่อสถานการณ์ที่รวดเร็ว มีทักษะในการเจรจาที่เป็นเลิศและมุ่งมั่นที่จะนำพาธุรกิจไปสู่ความสำเร็จผ่านการลงมือทำจริง",
       color: "#E74C3C"
     },
     ESFP: { 
-      name: "Fruity Fresh", 
-      emoji: "🎭",
+      name: "Entertainer", 
+      emoji: "🥂",
       scent: "กลิ่นผลไม้สดชื่น เต็มเปี่ยม",
-      desc: "บุคลิกประเภท Entertainer - จิตแจ่มใจสดชื่น มนต์เสน่ห์ ชอบการทำให้คนอื่นยิ้ม ชอบความสนุกสนาน",
+      desc: "บุคลิกประเภท ผู้มอบความบันเทิง - ผู้สร้างปฏิสัมพันธ์ที่มีเสน่ห์และพลังขับเคลื่อนในการสร้างบรรยากาศเชิงบวก มีความเชี่ยวชาญในการเข้าถึงผู้คนและเปลี่ยนประสบการณ์ธรรมดาให้เป็นจดหมายเหตุที่น่าจดจำ",
       color: "#F39C12"
     },
     ENFP: { 
-      name: "Sweet Citrus", 
-      emoji: "✨",
-      scent: "กลิ่นส้มหวาน สดชื่น ร่าเรื่อง",
-      desc: "บุคลิกประเภท Campaigner - ห่วงใจ สนใจหลายสิ่ง ตรงไปตรงมา พลวัต กระตุ้นกิจกรรม",
+      name: "Campaigner", 
+      emoji: "🌈",
+      scent: "A vibrant burst of boundless enthusiasm. Zesty citrus, black currant, and mint spark an uplifting, free-spirited adventure, opening a warm heart of joyful peach and jasmine. Sweet amber leaves an unforgettable, deeply connecting impression.",
+      desc: "บุคลิกประเภท นักรณรงค์ - นักสร้างสรรค์ผู้มีวิสัยทัศน์ที่สดใหม่และพลังในการเชื่อมโยงโอกาสที่คาดไม่ถึงเข้าด้วยกัน รักอิสระในการสำรวจแนวคิดที่หลากหลายและสร้างบรรยากาศที่เต็มไปด้วยความเป็นไปได้ใหม่ๆ",
       color: "#3498DB"
     },
     ENTP: { 
-      name: "Bold Wood", 
-      emoji: "💡",
-      scent: "กลิ่นไม้เข้มข้น กล้าหาญ",
-      desc: "บุคลิกประเภท Debater - เฉลียวฉล้าด ชอบความท้าทาย ไม่สนใจอำนาจ ชอบการถกเถียง",
+      name: "Debater", 
+      emoji: "⚡",
+      scent: "A provocative, fast-paced challenge. Sharp bergamot and pink pepper spark instant debate, shifting into a complex middle of ambergris and patchouli before settling over rebellious vetiver and tonka bean.",
+      desc: "บุคลิกประเภท นักโต้วาที - นักนวัตกรรมผู้ใช้ไหวพริบในการทำลายขีดจำกัดเดิมเพื่อสร้างโอกาสใหม่ รื่นรมย์กับการวิเคราะห์ความขัดแย้งและเปลี่ยนข้อมูลที่กระจัดกระจายให้กลายเป็นกลยุทธ์ที่เฉียบแหลม",
       color: "#2ECC71"
     },
     ESTJ: { 
-      name: "B-FF1952 Logistician", 
-      emoji: "👔",
-      scent: "Blends crisp citrus, sharp lavender, and oakmoss—a commanding, structured, and timeless fragrance built for the decisive leader.",
-      desc: "บุคลิกประเภท ผู้บริหาร/ผู้จัดการ - นักบริหารที่ยึดถือระเบียบปฏิบัติและผลสัมพฤติที่ชัดเจนเป็นที่ตั้ง มีความสามารถในการจัดสรรทรัพยากรและบุคคลอย่างมีประสิทธิภาพ เพื่อบรรลุเป้าหมายในกรอบเวลาที่กำหนด",
+      name: "Executive", 
+      emoji: "📐",
+      scent: "A disciplined, commanding statement of order. Structured lavender and bergamot establish clear authority, leading to a precise heart of red apple and verbena over a foundation of sandalwood and oakmoss.",
+      desc: "บุคลิกประเภท ผู้บริหาร - นักบริหารที่ยึดถือระเบียบปฏิบัติและผลสัมพฤติที่ชัดเจนเป็นที่ตั้ง มีความสามารถในการจัดสรรทรัพยากรและบุคคลอย่างมีประสิทธิภาพ เพื่อบรรลุเป้าหมายในกรอบเวลาที่กำหนด",
       color: "#34495E"
     },
     ESFJ: { 
-      name: "Floral Bloom", 
+      name: "Consul", 
       emoji: "🤝",
-      scent: "กลิ่นดอกไม้บาน อบอุ่น สังคม",
-      desc: "บุคลิกประเภท Consul - สนใจใจเพื่อน อบอุ่น เสริมสร้าง ปรัชญาดำเนินการสำเร็จ",
+      scent: "Universally loved and beautifully approachable. Sparkling grapefruit provides an inviting welcome, blooming into a pleasing heart of jasmine and crisp quince, over a clean foundation of cedarwood and musk.",
+      desc: "บุคลิกประเภท ผู้ให้คำปรึกษา - ผู้เชี่ยวชาญด้านการจัดการความสัมพันธ์ที่สร้างความแข็งแกร่งให้แก่เครือข่ายสังคมและองค์กร ให้ความสำคัญกับความร่วมมือและบรรทัดฐานที่นำพาความสำเร็จมาสู่หมู่คณะอย่างเป็นรูปธรรม",
       color: "#E91E63"
     },
     ENFJ: { 
-      name: "Warm Floral", 
+      name: "Protagonist", 
       emoji: "👑",
-      scent: "กลิ่นดอกไม้อบอุ่น ผู้นำ",
-      desc: "บุคลิกประเภท Protagonist - พิสูจน์ว่า นำทาง ชอบสนับสนุนและส่งเสริมคนอื่น",
+      scent: "An inspiring, radiant call to guide others. Vibrant bergamot sparks a compassionate aura, opening a harmonious heart of empathetic ylang-yllang, rose, and violet. A selfless foundation of musk and vanilla unites everyone in shared purpose.",
+      desc: "บุคลิกประเภท ผู้เป็นตัวเอก - ผู้ทรงอิทธิพลทางความคิดที่สร้างแรงบันดาลใจผ่านความเห็นอกเห็นใจและจริยธรรมที่มั่นคง มีทักษะในการประสานความร่วมมือและดึงศักยภาพสูงสุดของผู้คนออกมาเพื่อเป้าหมายที่เหนือกว่า",
       color: "#D35400"
     },
     ENTJ: { 
-      name: "Strong Oud", 
-      emoji: "🏆",
-      scent: "กลิ่นอูดแข็งแกร่ง อำนาจ",
-      desc: "บุคลิกประเภท Commander - นายพล ผู้นำธรรมชาติ ตัดสินใจอย่างไว เป็นกลาง ความเต็มใจ",
+      name: "Commander", 
+      emoji: "🦅",
+      scent: "Energetic apple and mandarin meet a striking heart of ginger and sea salt, balancing heat with a coastal chill. A base of vetiver and moss adds a steady, unconventional strength.",
+      desc: "บุคลิกประเภท ผู้บัญชาการ - ผู้นำที่เกิดมาเพื่อบริหารจัดการความเปลี่ยนแปลงและตัดสินใจในจังหวะวิกฤต มุ่งเน้นผลลัพธ์ที่จับต้องได้และการขยายอาณาจักรทางความคิดผ่านโครงสร้างที่มีประสิทธิภาพสูงสุด",
       color: "#8B4513"
     }
   };
