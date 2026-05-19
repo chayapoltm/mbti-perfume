@@ -436,8 +436,7 @@ export default function App() {
                   margin: 0,
                   lineHeight: "1.8"
                 }}>
-                  {result.desc}
-                </p>
+                  dangerouslySetInnerHTML={{ __html: result.desc }} />
               </div>
             </div>
 
