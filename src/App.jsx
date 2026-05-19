@@ -5,7 +5,26 @@ export default function App() {
   const [scores, setScores] = useState({ E: 0, I: 0, N: 0, S: 0, F: 0, T: 0, J: 0, P: 0 });
   const [showResult, setShowResult] = useState(false);
 
-  const questions = [
+const MBTIIcons = {
+  ISTJ: <img src="/icons/ISTJ.png" alt="ISTJ" style={{ width: "80px", height: "80px" }} />,
+  ISFJ: <img src="/icons/ISFJ.png" alt="ISFJ" style={{ width: "80px", height: "80px" }} />,
+  INFJ: <img src="/icons/INFJ.png" alt="INFJ" style={{ width: "80px", height: "80px" }} />,
+  INTJ: <img src="/icons/INTJ.png" alt="INTJ" style={{ width: "80px", height: "80px" }} />,
+  ISTP: <img src="/icons/ISTP.png" alt="ISTP" style={{ width: "80px", height: "80px" }} />,
+  ISFP: <img src="/icons/ISFP.png" alt="ISFP" style={{ width: "80px", height: "80px" }} />,
+  INFP: <img src="/icons/INFP.png" alt="INFP" style={{ width: "80px", height: "80px" }} />,
+  INTP: <img src="/icons/INTP.png" alt="INTP" style={{ width: "80px", height: "80px" }} />,
+  ESTP: <img src="/icons/ESTP.png" alt="ESTP" style={{ width: "80px", height: "80px" }} />,
+  ESFP: <img src="/icons/ESFP.png" alt="ESFP" style={{ width: "80px", height: "80px" }} />,
+  ENFP: <img src="/icons/ENFP.png" alt="ENFP" style={{ width: "80px", height: "80px" }} />,
+  ENTP: <img src="/icons/ENTP.png" alt="ENTP" style={{ width: "80px", height: "80px" }} />,
+  ESTJ: <img src="/icons/ESTJ.png" alt="ESTJ" style={{ width: "80px", height: "80px" }} />,
+  ESFJ: <img src="/icons/ESFJ.png" alt="ESFJ" style={{ width: "80px", height: "80px" }} />,
+  ENFJ: <img src="/icons/ENFJ.png" alt="ENFJ" style={{ width: "80px", height: "80px" }} />,
+  ENTJ: <img src="/icons/ENTJ.png" alt="ENTJ" style={{ width: "80px", height: "80px" }} />,
+};
+  
+const questions = [
     {
       q: "คุณชอบอย่างไรในการใช้เวลา",
       a: "ออกไปโต้ตอบคนอื่น หรือกิจกรรมสังคม",
@@ -109,42 +128,42 @@ export default function App() {
       name: "Logistician", 
       emoji: "🏛️",
       scent: "An explosion of joyful energy. Mouth-watering peach, lemon, and marigold create an uplifting aura, while a vibrant heart of jasmine and cinnamon dances over a rich base of precious woods.",
-      desc: "บุคลิกประเภท นักคำนวณ - นิยามของความเที่ยงตรงและความรับผิดชอบที่มั่นคงดั่งรากฐานขององค์กร ให้ความสำคัญกับข้อเท็จจริง ประสบการณ์ และการรักษามาตรฐานที่ได้รับการพิสูจน์แล้วว่าดีที่สุด",
+      desc: "<strong>บุคลิกประเภท - นักคำนวณ</strong>\nนิยามของความเที่ยงตรงและความรับผิดชอบที่มั่นคงดั่งรากฐานขององค์กร ให้ความสำคัญกับข้อเท็จจริง ประสบการณ์ และการรักษามาตรฐานที่ได้รับการพิสูจน์แล้วว่าดีที่สุด",
       color: "#D4A574"
     },
     ISFJ: { 
       name: "Defender", 
       emoji: "🛡️",
       scent: "A devoted, heartwarming embrace of pure comfort. Bright citrus and rose bloom into a nurturing heart of gentle jasmine, iris, and cedarwood, settling over a cozy, protective base of sweet chocolate and vanilla.",
-      desc: "บุคลิกประเภท ผู้ปกป้อง - ผู้ดูแลความเรียบร้อยที่มีความละเอียดรอบคอบและใส่ใจในทุกรายละเอียดของความสัมพันธ์ มุ่งเน้นการสนับสนุนเบื้องหลังอย่างเป็นระบบเพื่อสร้างความมั่นคงและสงบสุขให้แก่ส่วนรวม",
+      desc: "<strong>บุคลิกประเภท - ผู้ปกป้อง</strong>\nผู้ดูแลความเรียบร้อยที่มีความละเอียดรอบคอบและใส่ใจในทุกรายละเอียดของความสัมพันธ์ มุ่งเน้นการสนับสนุนเบื้องหลังอย่างเป็นระบบเพื่อสร้างความมั่นคงและสงบสุขให้แก่ส่วนรวม",
       color: "#E8B4D4"
     },
     INFJ: { 
       name: "Advocate", 
       emoji: "👁️‍🗨️",
       scent: "A serene meditation in a misty garden. Bright bergamot clears the mind, leading to an ethereal heart of green tea, orange flower, and a whisper of chocolate, all grounded by cedarwood for profound peace.",
-      desc: "บุคลิกประเภท นักสนับสนุน - ผู้นำทางจิตวิญญาณที่ใช้ความเข้าใจในมนุษย์อย่างลึกซึ้งในการขับเคลื่อนความเปลี่ยนแปลงเชิงบวก มุ่งหาแก่นแท้ของความสัมพันธ์และดำรงตัวตนอย่างมีระดับท่ามกลางความซับซ้อนของโลก",
+      desc: "<strong>บุคลิกประเภท - นักสนับสนุน</strong>\nผู้นำทางจิตวิญญาณที่ใช้ความเข้าใจในมนุษย์อย่างลึกซึ้งในการขับเคลื่อนความเปลี่ยนแปลงเชิงบวก มุ่งหาแก่นแท้ของความสัมพันธ์และดำรงตัวตนอย่างมีระดับท่ามกลางความซับซ้อนของโลก",
       color: "#9B7BA0"
     },
     INTJ: { 
       name: "Architect", 
       emoji: "♟️",
       scent: "A masterclass in deliberate design. Calculated spices and rose establish a commanding presence, unlocking an unyielding heart of rare agarwood. A minimalist foundation of amber and tonka ensures enduring focus.",
-      desc: "บุคลิกประเภท ผู้มีเหตุผล - นักยุทธศาสตร์ผู้ขับเคลื่อนโลกด้วยวิสัยทัศน์ระยะยาวและโครงสร้างเหตุผลที่สมบูรณ์แบบ รักความสันโดษเพื่อใช้เวลาขัดเกลาแผนงานให้ไร้ที่ติ และเชื่อมั่นในมาตรฐานความสำเร็จที่สูงกว่าค่าเฉลี่ย",
+      desc: "<strong>บุคลิกประเภท - ผู้มีเหตุผล</strong>\nนักยุทธศาสตร์ผู้ขับเคลื่อนโลกด้วยวิสัยทัศน์ระยะยาวและโครงสร้างเหตุผลที่สมบูรณ์แบบ รักความสันโดษเพื่อใช้เวลาขัดเกลาแผนงานให้ไร้ที่ติ และเชื่อมั่นในมาตรฐานความสำเร็จที่สูงกว่าค่าเฉลี่ย",
       color: "#2C2C2C"
     },
     ISTP: { 
       name: "Virtuoso", 
       emoji: "⚙️",
       scent: "A calculated mastery of raw mechanics. Sharp bergamot and saffron spark tactical focus, unfolding into a rugged heart of leather and amber over an independent, pragmatic foundation of patchouli, oakmoss, and oudh.",
-      desc: "บุคลิกประเภท ผู้มีความสามารถโดดเด่น - นักแก้ปัญหาเชิงเทคนิคที่เน้นความเรียบง่ายและประสิทธิภาพสูงสุดในสถานการณ์จริง ใช้ความสงบและการวิเคราะห์ที่เฉียบไวในการจัดการอุปสรรคตรงหน้าอย่างเป็นมืออาชีพ",
+      desc: "<strong>บุคลิกประเภท - ผู้มีความสามารถโดดเด่น</strong>\nนักแก้ปัญหาเชิงเทคนิคที่เน้นความเรียบง่ายและประสิทธิภาพสูงสุดในสถานการณ์จริง ใช้ความสงบและการวิเคราะห์ที่เฉียบไวในการจัดการอุปสรรคตรงหน้าอย่างเป็นมืออาชีพ",
       color: "#FF9500"
     },
     ISFP: { 
       name: "Adventurer", 
       emoji: "🎨",
       scent: "A deeply personal, poetic retreat into unfiltered expression. Creamy milk and ambrette spark a tranquil, imaginative haven, unfolding into a soft, artistic heart of muguet, violet, and jasmine over a cozy foundation of comforting vanilla.",
-      desc: "บุคลิกประเภท นักผจญภัย - ศิลปินผู้สื่อสารผ่านการกระทำและสุนทรียภาพในทุกจังหวะชีวิต มีความละเอียดอ่อนต่อประสบการณ์ปัจจุบันและสร้างสรรค์ผลงานที่สะท้อนถึงรสนิยมที่เป็นเอกลักษณ์เฉพาะตัว",
+      desc: "<strong>บุคลิกประเภท - นักผจญภัย</strong>\nศิลปินผู้สื่อสารผ่านการกระทำและสุนทรียภาพในทุกจังหวะชีวิต มีความละเอียดอ่อนต่อประสบการณ์ปัจจุบันและสร้างสรรค์ผลงานที่สะท้อนถึงรสนิยมที่เป็นเอกลักษณ์เฉพาะตัว",
       color: "#F4D03F"
     },
     INFP: { 
@@ -158,63 +177,63 @@ export default function App() {
       name: "Logician", 
       emoji: "🧪",
       scent: "An intellectual blueprint of pure clarity. Crisp bergamot sparks analytical insight, yielding to a precise heart of fluid jasmine and plush musk. Vanilla and earthy oakmoss establish a grounded, logical conclusion.",
-      desc: "บุคลิกประเภท นักตรรกะ - นักคิดเชิงนามธรรมผู้หลงใหลในการรื้อถอนและสร้างทฤษฎีใหม่ภายใต้ความเงียบเชียบ มีระบบตรรกะที่เป็นอิสระจากกรอบเดิมๆ มุ่งเน้นความถูกต้องของข้อมูลมากกว่าความพึงพอใจของสังคม",
+      desc: "<strong>บุคลิกประเภท - นักตรรกะ</strong>\nนักคิดเชิงนามธรรมผู้หลงใหลในการรื้อถอนและสร้างทฤษฎีใหม่ภายใต้ความเงียบเชียบ มีระบบตรรกะที่เป็นอิสระจากกรอบเดิมๆ มุ่งเน้นความถูกต้องของข้อมูลมากกว่าความพึงพอใจของสังคม",
       color: "#95A5A6"
     },
     ESTP: { 
       name: "Entrepreneur", 
       emoji: "🌪️",
       scent: "A high-voltage pulse for the night. High-energy bergamot and mint ignite a provocative heart of spices and heliotrope, settling into an addictive, sweet glow of vanilla and amber under city lights.",
-      desc: "บุคลิกประเภท Entrepreneur - นักบริหารความเสี่ยงผู้เชี่ยวชาญในการคว้าโอกาสและตอบโต้ต่อสถานการณ์ที่รวดเร็ว มีทักษะในการเจรจาที่เป็นเลิศและมุ่งมั่นที่จะนำพาธุรกิจไปสู่ความสำเร็จผ่านการลงมือทำจริง",
+      desc: "<strong>บุคลิกประเภท - Entrepreneur</strong>\nนักบริหารความเสี่ยงผู้เชี่ยวชาญในการคว้าโอกาสและตอบโต้ต่อสถานการณ์ที่รวดเร็ว มีทักษะในการเจรจาที่เป็นเลิศและมุ่งมั่นที่จะนำพาธุรกิจไปสู่ความสำเร็จผ่านการลงมือทำจริง",
       color: "#E74C3C"
     },
     ESFP: { 
       name: "Entertainer", 
       emoji: "🥂",
       scent: "An infectious, spotlight-stealing burst of joy. Playful strawberry and lemon ignite an energetic welcome, unfolding into a theatrical heart of marshmallow and pastry cream over sweet vanilla and sugar.",
-      desc: "บุคลิกประเภท ผู้มอบความบันเทิง - ผู้สร้างปฏิสัมพันธ์ที่มีเสน่ห์และพลังขับเคลื่อนในการสร้างบรรยากาศเชิงบวก มีความเชี่ยวชาญในการเข้าถึงผู้คนและเปลี่ยนประสบการณ์ธรรมดาให้เป็นจดหมายเหตุที่น่าจดจำ",
+      desc: "<strong>บุคลิกประเภท - ผู้มอบความบันเทิง</strong>\nผู้สร้างปฏิสัมพันธ์ที่มีเสน่ห์และพลังขับเคลื่อนในการสร้างบรรยากาศเชิงบวก มีความเชี่ยวชาญในการเข้าถึงผู้คนและเปลี่ยนประสบการณ์ธรรมดาให้เป็นจดหมายเหตุที่น่าจดจำ",
       color: "#F39C12"
     },
     ENFP: { 
       name: "Campaigner", 
       emoji: "🌈",
       scent: "A vibrant burst of boundless enthusiasm. Zesty citrus, black currant, and mint spark an uplifting, free-spirited adventure, opening a warm heart of joyful peach and jasmine. Sweet amber leaves an unforgettable, deeply connecting impression.",
-      desc: "บุคลิกประเภท นักรณรงค์ - นักสร้างสรรค์ผู้มีวิสัยทัศน์ที่สดใหม่และพลังในการเชื่อมโยงโอกาสที่คาดไม่ถึงเข้าด้วยกัน รักอิสระในการสำรวจแนวคิดที่หลากหลายและสร้างบรรยากาศที่เต็มไปด้วยความเป็นไปได้ใหม่ๆ",
+      desc: "<strong>บุคลิกประเภท - นักรณรงค์</strong>\nนักสร้างสรรค์ผู้มีวิสัยทัศน์ที่สดใหม่และพลังในการเชื่อมโยงโอกาสที่คาดไม่ถึงเข้าด้วยกัน รักอิสระในการสำรวจแนวคิดที่หลากหลายและสร้างบรรยากาศที่เต็มไปด้วยความเป็นไปได้ใหม่ๆ",
       color: "#3498DB"
     },
     ENTP: { 
       name: "Debater", 
       emoji: "⚡",
       scent: "A provocative, fast-paced challenge. Sharp bergamot and pink pepper spark instant debate, shifting into a complex middle of ambergris and patchouli before settling over rebellious vetiver and tonka bean.",
-      desc: "บุคลิกประเภท นักโต้วาที - นักนวัตกรรมผู้ใช้ไหวพริบในการทำลายขีดจำกัดเดิมเพื่อสร้างโอกาสใหม่ รื่นรมย์กับการวิเคราะห์ความขัดแย้งและเปลี่ยนข้อมูลที่กระจัดกระจายให้กลายเป็นกลยุทธ์ที่เฉียบแหลม",
+      desc: "<strong>บุคลิกประเภท - นักโต้วาที</strong>\nนักนวัตกรรมผู้ใช้ไหวพริบในการทำลายขีดจำกัดเดิมเพื่อสร้างโอกาสใหม่ รื่นรมย์กับการวิเคราะห์ความขัดแย้งและเปลี่ยนข้อมูลที่กระจัดกระจายให้กลายเป็นกลยุทธ์ที่เฉียบแหลม",
       color: "#2ECC71"
     },
     ESTJ: { 
       name: "Executive", 
       emoji: "📐",
       scent: "A disciplined, commanding statement of order. Structured lavender and bergamot establish clear authority, leading to a precise heart of red apple and verbena over a foundation of sandalwood and oakmoss.",
-      desc: "บุคลิกประเภท ผู้บริหาร - นักบริหารที่ยึดถือระเบียบปฏิบัติและผลสัมพฤติที่ชัดเจนเป็นที่ตั้ง มีความสามารถในการจัดสรรทรัพยากรและบุคคลอย่างมีประสิทธิภาพ เพื่อบรรลุเป้าหมายในกรอบเวลาที่กำหนด",
+      desc: "<strong>บุคลิกประเภท - ผู้บริหาร</strong>\nนักบริหารที่ยึดถือระเบียบปฏิบัติและผลสัมพฤติที่ชัดเจนเป็นที่ตั้ง มีความสามารถในการจัดสรรทรัพยากรและบุคคลอย่างมีประสิทธิภาพ เพื่อบรรลุเป้าหมายในกรอบเวลาที่กำหนด",
       color: "#34495E"
     },
     ESFJ: { 
       name: "Consul", 
       emoji: "🤝",
       scent: "Universally loved and beautifully approachable. Sparkling grapefruit provides an inviting welcome, blooming into a pleasing heart of jasmine and crisp quince, over a clean foundation of cedarwood and musk.",
-      desc: "บุคลิกประเภท ผู้ให้คำปรึกษา - ผู้เชี่ยวชาญด้านการจัดการความสัมพันธ์ที่สร้างความแข็งแกร่งให้แก่เครือข่ายสังคมและองค์กร ให้ความสำคัญกับความร่วมมือและบรรทัดฐานที่นำพาความสำเร็จมาสู่หมู่คณะอย่างเป็นรูปธรรม",
+      desc: "<strong>บุคลิกประเภท - ผู้ให้คำปรึกษา</strong>\nผู้เชี่ยวชาญด้านการจัดการความสัมพันธ์ที่สร้างความแข็งแกร่งให้แก่เครือข่ายสังคมและองค์กร ให้ความสำคัญกับความร่วมมือและบรรทัดฐานที่นำพาความสำเร็จมาสู่หมู่คณะอย่างเป็นรูปธรรม",
       color: "#E91E63"
     },
     ENFJ: { 
       name: "Protagonist", 
       emoji: "👑",
       scent: "An inspiring, radiant call to guide others. Vibrant bergamot sparks a compassionate aura, opening a harmonious heart of empathetic ylang-yllang, rose, and violet. A selfless foundation of musk and vanilla unites everyone in shared purpose.",
-      desc: "บุคลิกประเภท ผู้เป็นตัวเอก - ผู้ทรงอิทธิพลทางความคิดที่สร้างแรงบันดาลใจผ่านความเห็นอกเห็นใจและจริยธรรมที่มั่นคง มีทักษะในการประสานความร่วมมือและดึงศักยภาพสูงสุดของผู้คนออกมาเพื่อเป้าหมายที่เหนือกว่า",
+      desc: "<strong>บุคลิกประเภท - ผู้เป็นตัวเอก</strong>\nผู้ทรงอิทธิพลทางความคิดที่สร้างแรงบันดาลใจผ่านความเห็นอกเห็นใจและจริยธรรมที่มั่นคง มีทักษะในการประสานความร่วมมือและดึงศักยภาพสูงสุดของผู้คนออกมาเพื่อเป้าหมายที่เหนือกว่า",
       color: "#D35400"
     },
     ENTJ: { 
       name: "Commander", 
       emoji: "🦅",
       scent: "Energetic apple and mandarin meet a striking heart of ginger and sea salt, balancing heat with a coastal chill. A base of vetiver and moss adds a steady, unconventional strength.",
-      desc: "บุคลิกประเภท ผู้บัญชาการ - ผู้นำที่เกิดมาเพื่อบริหารจัดการความเปลี่ยนแปลงและตัดสินใจในจังหวะวิกฤต มุ่งเน้นผลลัพธ์ที่จับต้องได้และการขยายอาณาจักรทางความคิดผ่านโครงสร้างที่มีประสิทธิภาพสูงสุด",
+      desc: "<strong>บุคลิกประเภท - ผู้บัญชาการ</strong>\nผู้นำที่เกิดมาเพื่อบริหารจัดการความเปลี่ยนแปลงและตัดสินใจในจังหวะวิกฤต มุ่งเน้นผลลัพธ์ที่จับต้องได้และการขยายอาณาจักรทางความคิดผ่านโครงสร้างที่มีประสิทธิภาพสูงสุด",
       color: "#8B4513"
     }
   };
@@ -386,7 +405,7 @@ export default function App() {
                   fontSize: "60px",
                   marginBottom: "12px"
                 }}>
-                  {result.emoji}
+                  {MBTIIcons[mbti]}
                 </div>
                 <h1 style={{
                   fontSize: "36px",
@@ -435,7 +454,7 @@ export default function App() {
                   color: "#333",
                   margin: 0,
                   lineHeight: "1.8"
-                }}>
+                }}
                   dangerouslySetInnerHTML={{ __html: result.desc }} />
               </div>
             </div>
