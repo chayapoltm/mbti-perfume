@@ -151,7 +151,7 @@ export default function App() {
       name: "Mediator", 
       emoji: "🦋",
       scent: "A soft-focus romance like a warm embrace. Gentle geranium drifts into a nostalgic, powdery heart of rose, anchored by amber and cedarwood to create a comforting, lyrical sanctuary.",
-      desc: "บุคลิกประเภท ผู้ไกล่เกลี่ย - จิตวิญญาณเสรีผู้ยึดถือความสัตย์จริงต่อความเชื่อมั่นภายในเป็นเข็มทิศในการดำเนินชีวิต ให้คุณค่ากับความหมายที่ซ่อนอยู่และมุ่งสร้างสรรค์งานที่สะท้อนตัวตนอย่างประณีตและจริงใจ",
+      desc: "<strong>บุคลิกประเภท - ผู้ไกล่เกลี่ย</strong>\nจิตวิญญาณเสรีผู้ยึดถือความสัตย์จริงต่อความเชื่อมั่นภายในเป็นเข็มทิศในการดำเนินชีวิต ให้คุณค่ากับความหมายที่ซ่อนอยู่และมุ่งสร้างสรรค์งานที่สะท้อนตัวตนอย่างประณีตและจริงใจ",
       color: "#B19CD9"
     },
     INTP: { 
